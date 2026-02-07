@@ -1,127 +1,154 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Amie Shop – Phụ kiện & Quà tặng dễ thương</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #fff6f9;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #ff9aa2, #ffb7b2);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        header h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 18px;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: white;
-            color: #ff5e78;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 50px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            text-align: center;
-            color: #ff5e78;
-            margin-bottom: 40px;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .card h3 {
-            color: #ff5e78;
-            margin-bottom: 10px;
-        }
-        .contact {
-            background: #ffe4ea;
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #ff9aa2;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Amie Shop – Phụ kiện & Quà tặng dễ thương</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family: "Segoe UI", sans-serif;
+    background:#f5fff6;
+    color:#2f4f2f;
+}
+header{
+    background:linear-gradient(135deg,#b7e4c7,#d8f3dc);
+    text-align:center;
+    padding:60px 20px;
+}
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+header p{
+    font-size:18px;
+}
+.btn-group{
+    margin-top:25px;
+}
+.btn{
+    display:inline-block;
+    margin:8px;
+    padding:14px 26px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    color:white;
+}
+.call{background:#52b788;}
+.zalo{background:#38bdf8;}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+h2{
+    text-align:center;
+    color:#40916c;
+    margin-bottom:40px;
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:white;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    padding:20px;
+    text-align:center;
+}
+.card img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+.card h3{
+    color:#40916c;
+}
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+.feature{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+}
+.contact{
+    background:#e9f5ec;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+}
+footer{
+    background:#95d5b2;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <h1>Amie Shop</h1>
     <p>Phụ kiện xinh ✦ Quà tặng dễ thương ✦ Tô tượng sáng tạo</p>
-    <a href="#contact" class="btn">Liên hệ ngay</a>
+
+    <div class="btn-group">
+        <a href="tel:0123456789" class="btn call">📞 Gọi điện</a>
+        <a href="https://zalo.me/0123456789" class="btn zalo" target="_blank">💬 Chat Zalo</a>
+    </div>
 </header>
 
 <section>
-    <h2>Sản phẩm của Amie Shop</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Phụ kiện</h3>
-            <p>Bông tai, kẹp tóc, vòng tay, móc khóa xinh xắn – giá yêu thương.</p>
-        </div>
-        <div class="card">
-            <h3>Quà tặng</h3>
-            <p>Quà sinh nhật, quà lưu niệm, quà handmade dành cho mọi dịp.</p>
-        </div>
-        <div class="card">
-            <h3>Tô tượng</h3>
-            <p>Tượng thạch cao, màu vẽ an toàn – giải trí & sáng tạo cho bé.</p>
-        </div>
+<h2>Sản phẩm nổi bật</h2>
+<div class="products">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1618354691417-c9c7cbb6e7a5" alt="">
+        <h3>Phụ kiện</h3>
+        <p>Bông tai, kẹp tóc, vòng tay, móc khóa dễ thương.</p>
     </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="">
+        <h3>Quà tặng</h3>
+        <p>Quà sinh nhật, quà lưu niệm, quà handmade xinh xắn.</p>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed" alt="">
+        <h3>Tô tượng</h3>
+        <p>Tượng thạch cao – màu an toàn cho bé & gia đình.</p>
+    </div>
+</div>
 </section>
 
 <section>
-    <h2>Vì sao chọn Amie Shop?</h2>
-    <div class="services">
-        <div class="card">🌸 Hàng dễ thương – hợp trend</div>
-        <div class="card">💰 Giá cả hợp lý</div>
-        <div class="card">🎁 Phù hợp làm quà tặng</div>
-        <div class="card">😊 Tư vấn nhiệt tình</div>
-    </div>
+<h2>Vì sao chọn Amie Shop?</h2>
+<div class="features">
+    <div class="feature">🌱 Hàng xinh – hợp trend</div>
+    <div class="feature">💰 Giá dễ thương</div>
+    <div class="feature">🎁 Phù hợp làm quà</div>
+    <div class="feature">😊 Tư vấn nhiệt tình</div>
+</div>
 </section>
 
 <section id="contact">
-    <h2>Liên hệ Amie Shop</h2>
-    <div class="contact">
-        <p>📍 Địa chỉ: (bạn điền địa chỉ shop vào đây)</p>
-        <p>📞 Hotline / Zalo: (số điện thoại)</p>
-        <p>📘 Facebook: Amie Shop</p>
-        <p>📩 Inbox Facebook / Zalo để đặt hàng nhanh</p>
-    </div>
+<h2>Liên hệ Amie Shop</h2>
+<div class="contact">
+    <p>📍 Địa chỉ: 45 Cù Chính Lan - Phường Diên Hồng - Tỉnh Gia Lai</p>
+    <p>📞 Hotline / Zalo: 0905120304</p>
+    <p>📘 Facebook: Amie Shop - Phụ kiện và Quà tặng Gia Lai</p>
+</div>
 </section>
 
 <footer>
-    © 2026 Amie Shop – Phụ kiện & Quà tặng dễ thương
+© 2026 Amie Shop – Phụ kiện & Quà tặng dễ thương
 </footer>
 
 </body>
